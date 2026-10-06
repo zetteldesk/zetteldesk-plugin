@@ -1,0 +1,367 @@
+# Countries Zetteldesk can post to
+
+For international letters (`international=True`) the last address line must be the country, written out in full in German or English exactly as listed here. Abbreviations are not recognised. For letters within Germany, write no country line.
+
+Generated from `mcps/mail/zd_mail/countries.json`; do not edit by hand.
+
+- Afghanistan
+- Albania
+- Albanien
+- Algeria
+- Algerien
+- American Samoa
+- Amerikanisch-Samoa
+- Amerikanische Jungferninseln
+- Andorra
+- Angola
+- Anguilla
+- Antarctica
+- Antarktis
+- Antigua und Barbuda
+- Argentina
+- Argentinien
+- Armenia
+- Armenien
+- Aruba
+- Aserbaidschan
+- Australia
+- Australien
+- Austria
+- Azerbaijan
+- Bahamas
+- Bahrain
+- Bangladesh
+- Barbados
+- Belarus
+- Belgien
+- Belgium
+- Belize
+- Benin
+- Bermuda
+- Bhutan
+- Bolivia
+- Bolivien
+- Bosnien und Herzegowina
+- Botsuana
+- Botswana
+- Bouvet Island
+- Bouvetinsel
+- Brasilien
+- Brazil
+- Britische Jungferninseln
+- Britisches Territorium im Indischen Ozean
+- British Indian Ocean Territory
+- British Virgin Islands
+- Brunei Darussalam
+- Bulgaria
+- Bulgarien
+- Burkina Faso
+- Burundi
+- Cabo Verde
+- Cambodia
+- Cameroon
+- Canada
+- Caribbean Netherlands
+- Cayman Islands
+- Central African Republic
+- Chad
+- Chile
+- China
+- Christmas Island
+- Cocos (Keeling) Islands
+- Colombia
+- Comoros
+- Congo - Brazzaville
+- Congo - Kinshasa
+- Cook Islands
+- Cookinseln
+- Costa Rica
+- Croatia
+- Cuba
+- Curaçao
+- Cyprus
+- Czech Republic
+- Czechia
+- Denmark
+- Deutschland
+- Djibouti
+- Dominica
+- Dominican Republic
+- Dominikanische Republik
+- Dschibuti
+- Dänemark
+- Ecuador
+- Egypt
+- El Salvador
+- Elfenbeinküste
+- Equatorial Guinea
+- Eritrea
+- Estonia
+- Ethiopia
+- Falklandinseln
+- Faroe Islands
+- Fidschi
+- Fiji
+- Finland
+- Finnland
+- France
+- Frankreich
+- Französisch-Polynesien
+- Französische Süd- und Antarktisgebiete
+- French Guiana
+- French Polynesia
+- French Southern Territories
+- Färöer
+- Gabon
+- Gabun
+- Gambia
+- GB
+- Georgia
+- Georgien
+- Germany
+- Ghana
+- Gibraltar
+- Great Britain
+- Greece
+- Greenland
+- Grenada
+- Griechenland
+- Grönland
+- Guadeloupe
+- Guam
+- Guatemala
+- Guernsey
+- Guinea
+- Guinea-Bissau
+- Guyana
+- Haiti
+- Heard und McDonaldinseln
+- Holland
+- Honduras
+- Hong Kong SAR China
+- Hungary
+- Iceland
+- India
+- Indien
+- Indonesia
+- Indonesien
+- Irak
+- Iran
+- Iraq
+- Ireland
+- Irland
+- Island
+- Isle of Man
+- Israel
+- Italien
+- Italy
+- Jamaica
+- Jamaika
+- Japan
+- Jemen
+- Jersey
+- Jordan
+- Jordanien
+- Kaimaninseln
+- Kambodscha
+- Kamerun
+- Kanada
+- Karibische Niederlande
+- Kasachstan
+- Katar
+- Kazakhstan
+- Kenia
+- Kenya
+- Kirgisistan
+- Kiribati
+- Kolumbien
+- Komoren
+- Kroatien
+- Kuba
+- Kuwait
+- Kyrgyzstan
+- Latvia
+- Lebanon
+- Lesotho
+- Lettland
+- Libanon
+- Liberia
+- Libya
+- Libyen
+- Liechtenstein
+- Litauen
+- Lithuania
+- Luxembourg
+- Luxemburg
+- Macao SAR China
+- Madagascar
+- Madagaskar
+- Malawi
+- Malaysia
+- Maldives
+- Malediven
+- Mali
+- Malta
+- Marokko
+- Marshall Islands
+- Marshallinseln
+- Martinique
+- Mauretanien
+- Mauritania
+- Mauritius
+- Mayotte
+- Mexico
+- Mexiko
+- Micronesia
+- Mikronesien
+- Monaco
+- Mongolei
+- Mongolia
+- Montenegro
+- Montserrat
+- Morocco
+- Mosambik
+- Mozambique
+- Myanmar
+- Myanmar (Burma)
+- Namibia
+- Nauru
+- Nepal
+- Netherlands
+- Neukaledonien
+- Neuseeland
+- New Caledonia
+- New Zealand
+- Nicaragua
+- Niederlande
+- Niger
+- Nigeria
+- Niue
+- Nordkorea
+- Nordmazedonien
+- Norfolk Island
+- Norfolkinsel
+- Northern Mariana Islands
+- Norway
+- Norwegen
+- Nördliche Marianen
+- Oman
+- Osttimor
+- Pakistan
+- Palau
+- Panama
+- Papua New Guinea
+- Papua-Neuguinea
+- Paraguay
+- Peru
+- Philippinen
+- Philippines
+- Pitcairn Islands
+- Pitcairninseln
+- Poland
+- Polen
+- Portugal
+- Puerto Rico
+- Qatar
+- Romania
+- Ruanda
+- Rumänien
+- Russia
+- Russian Federation
+- Russland
+- Rwanda
+- Réunion
+- Salomonen
+- Sambia
+- Samoa
+- San Marino
+- Saudi Arabia
+- Schweden
+- Schweiz
+- Senegal
+- Serbia
+- Serbien
+- Seychellen
+- Seychelles
+- Sierra Leone
+- Simbabwe
+- Singapore
+- Singapur
+- Sint Maarten
+- Slovakia
+- Slovenia
+- Slowakei
+- Slowenien
+- Solomon Islands
+- Somalia
+- Sonderverwaltungsregion Macau
+- South Africa
+- South Georgia & South Sandwich Islands
+- South Sudan
+- Spain
+- Spanien
+- Sri Lanka
+- Sudan
+- Suriname
+- Swasiland
+- Sweden
+- Switzerland
+- Syrien
+- São Tomé und Príncipe
+- Südafrika
+- Südgeorgien und die Südlichen Sandwichinseln
+- Südkorea
+- Südsudan
+- Tadschikistan
+- Taiwan
+- Tajikistan
+- Tansania
+- Thailand
+- The Netherlands
+- Timor-Leste
+- Togo
+- Tokelau
+- Tonga
+- Trinidad und Tobago
+- Tschad
+- Tschechien
+- Tunesien
+- Tunisia
+- Turkey
+- Turkmenistan
+- Turks- und Caicosinseln
+- Tuvalu
+- Türkei
+- Uganda
+- Ukraine
+- Ungarn
+- United Arab Emirates
+- United Kingdom
+- United States of America
+- Uruguay
+- US
+- USA
+- Usbekistan
+- Uzbekistan
+- Vanuatu
+- Venezuela
+- Vereinigte Arabische Emirate
+- Vereinigte Staaten
+- Vereinigte Staaten von Amerika
+- Vereinigtes Königreich
+- Vietnam
+- Wallis und Futuna
+- Weihnachtsinsel
+- Weißrussland
+- Western Sahara
+- Westsahara
+- Yemen
+- Zambia
+- Zentralafrikanische Republik
+- Zimbabwe
+- Zypern
+- Ägypten
+- Äquatorialguinea
+- Äthiopien
+- Åland Islands
+- Österreich

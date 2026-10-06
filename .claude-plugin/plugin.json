@@ -1,0 +1,23 @@
+{
+  "name": "zetteldesk",
+  "version": "1.0.0",
+  "description": "Write and send real letters by post from Claude, ChatGPT or Codex. Zetteldesk prints and mails them in Germany, to almost any country.",
+  "author": {
+    "name": "Zetteldesk",
+    "email": "support@zetteldesk.com",
+    "url": "https://zetteldesk.com"
+  },
+  "homepage": "https://zetteldesk.com",
+  "repository": "https://github.com/zetteldesk/zetteldesk-plugin",
+  "license": "MIT",
+  "keywords": [
+    "letters",
+    "postal-mail",
+    "post",
+    "registered-mail",
+    "einschreiben",
+    "kuendigung",
+    "mcp",
+    "germany"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "zetteldesk",
+  "description": "Zetteldesk: write and send real letters by post",
+  "owner": {
+    "name": "Zetteldesk",
+    "email": "support@zetteldesk.com"
+  },
+  "plugins": [
+    {
+      "name": "zetteldesk",
+      "source": "./",
+      "description": "Write and send real letters by post from Claude, ChatGPT or Codex. Zetteldesk prints and mails them in Germany, to almost any country."
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "zetteldesk",
+  "version": "1.0.0",
+  "description": "Write and send real letters by post from Claude, ChatGPT or Codex. Zetteldesk prints and mails them in Germany, to almost any country.",
+  "author": {
+    "name": "Zetteldesk",
+    "email": "support@zetteldesk.com",
+    "url": "https://zetteldesk.com"
+  },
+  "homepage": "https://zetteldesk.com",
+  "repository": "https://github.com/zetteldesk/zetteldesk-plugin",
+  "license": "MIT",
+  "keywords": [
+    "letters",
+    "postal-mail",
+    "post",
+    "registered-mail",
+    "einschreiben",
+    "kuendigung",
+    "mcp",
+    "germany"
+  ],
+  "extensions": {
+    "com.openai": {
+      "apps": "./.app.json",
+      "interface": {
+        "displayName": "Zetteldesk",
+        "shortDescription": "Send real letters by post",
+        "longDescription": "Zetteldesk writes and sends real letters by post. Ask your assistant to write a letter, or give it your own PDF: it checks the letter, shows you the exact price and the recipient, and only after your confirmation prints, envelopes and posts it.\n\nUse it for anything that has to go on paper: a cancellation letter (Kündigung), an objection (Widerspruch), a letter to your landlord, an authority, an insurer or an employer, a formal notice, a registered letter (Einschreiben) or a letter to a person without email.\n\nLetters are printed and posted in Germany and can be delivered to almost any country. International delivery costs more, and the price is always shown before anything is sent. If the recipient is happy to receive a letter from a German sender, you can post a letter from Germany to Italy, France, the US or anywhere else on the list of supported countries.\n\nWhat the plugin does: compose a DIN 5008 letter from plain text, validate an uploaded PDF (A4, address window, not encrypted), quote the price, send the letter, show its status timeline, cancel it within moments of sending, and show your prepaid balance. Letters are paid from a prepaid balance that you top up on zetteldesk.com; the plugin itself never handles payments.\n\nIt does not send email. Sending a letter costs money and cannot be undone once the letter has been handed to the printer, so your assistant is expected to ask for your confirmation first. You sign in with your Zetteldesk account; create one for free on zetteldesk.com.",
+        "developerName": "Zetteldesk",
+        "category": "Productivity",
+        "capabilities": [
+          "Write a letter from plain text",
+          "Check a PDF and get the price",
+          "Send a letter by post, also internationally",
+          "Track or cancel a letter",
+          "Show your prepaid balance"
+        ],
+        "websiteURL": "https://zetteldesk.com",
+        "privacyPolicyURL": "https://zetteldesk.com/en/privacy",
+        "termsOfServiceURL": "https://zetteldesk.com/en/terms",
+        "supportURL": "https://zetteldesk.com/en/docs",
+        "defaultPrompt": [
+          "Write and send a letter to terminate my gym membership",
+          "Check this PDF and tell me what it costs to post it",
+          "Post a registered letter to my landlord in Berlin",
+          "Send a letter from Germany to my aunt in Milan, Italy"
+        ],
+        "brandColor": "#C43D25",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      },
+      "review": {
+        "commerce": true,
+        "commerce_description": "Zetteldesk is a paid postal service. Letters are paid from a prepaid balance that the user tops up only on zetteldesk.com. The plugin has no tool that takes payment or moves money; sending a letter deducts its price from the existing balance after the user confirms price and recipient.",
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Compose a letter and send it to a German address",
+              "prompt": "Write a short letter terminating my gym membership \"FitNow\" to the end of the contract, from Erika Mustermann, Musterstraße 1, 10115 Berlin to FitNow GmbH, Hauptstraße 5, 50667 Köln. Show me the price and send it after I confirm.",
+              "tools_triggered": [
+                "compose_letter",
+                "validate_letter",
+                "send_letter",
+                "get_letter"
+              ],
+              "expected_behavior": "A letter PDF is composed, the price and recipient are shown, and only after the user confirms the letter is sent; the status is then shown (submitted or later)."
+            },
+            {
+              "description": "Validate an uploaded PDF and get the price",
+              "prompt": "Here is a PDF letter. Check whether it can be posted and tell me what it would cost, but do not send it.",
+              "tools_triggered": [
+                "validate_letter"
+              ],
+              "expected_behavior": "The PDF is validated, the detected recipient and the price are shown, and nothing is sent or charged."
+            },
+            {
+              "description": "International letter to Italy",
+              "prompt": "Write a letter to my landlord Giulia Rossi, Via Roma 10, 20121 Milano, Italy, saying the keys are in the mailbox. My address is Max Muster, Hauptstr. 1, 10115 Berlin. Show me the international price first.",
+              "tools_triggered": [
+                "compose_letter",
+                "validate_letter",
+                "get_quote"
+              ],
+              "expected_behavior": "The letter is composed with the country on the last address line and the international price is quoted; nothing is sent without confirmation."
+            },
+            {
+              "description": "Send a letter and cancel it straight away",
+              "prompt": "Send this letter now (price confirmed) and cancel it immediately after.",
+              "tools_triggered": [
+                "send_letter",
+                "cancel_letter",
+                "get_letter"
+              ],
+              "expected_behavior": "The letter is sent and then cancelled within moments; the result is cancelled and the price is refunded to the balance."
+            },
+            {
+              "description": "List letters, show the status timeline and the balance",
+              "prompt": "Show my recent letters, the status timeline of the latest one, and my balance.",
+              "tools_triggered": [
+                "list_letters",
+                "get_letter",
+                "get_balance"
+              ],
+              "expected_behavior": "The recent letters, the event timeline of the latest letter and the prepaid balance are shown."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Email is out of scope",
+              "prompt": "Email my boss that I will be late tomorrow."
+            },
+            {
+              "description": "No sending without confirming the price",
+              "prompt": "Send a letter to my landlord right now, I don't want to see the price or confirm anything."
+            },
+            {
+              "description": "Incomplete address fails validation without charge",
+              "prompt": "Write and send a letter to \"Herr Müller\" with no street or city."
+            }
+          ]
+        }
+      }
+    }
+  }
+}
