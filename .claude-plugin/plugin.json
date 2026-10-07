@@ -1,6 +1,6 @@
 {
   "name": "zetteldesk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Write and send real letters by post from Claude, ChatGPT or Codex. Zetteldesk prints and mails them in Germany, to almost any country.",
   "author": {
     "name": "Zetteldesk",
