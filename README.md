@@ -10,7 +10,7 @@ employer, a registered letter (Einschreiben).
 ## Install
 
 - **Claude Code:** `claude plugin marketplace add zetteldesk/zetteldesk-plugin`, then `claude plugin install zetteldesk@zetteldesk`.
-- **Codex:** `codex plugin marketplace add zetteldesk/zetteldesk-plugin`, then install **Zetteldesk** from the plugin list.
+- **Codex:** `codex plugin marketplace add zetteldesk/zetteldesk-plugin`, then `codex plugin add zetteldesk@zetteldesk`.
 - **Claude.ai and ChatGPT:** add `https://mcp.zetteldesk.com/mail` as a custom connector or install Zetteldesk from the plugin directory.
 
 You sign in with your Zetteldesk account (OAuth in the browser). Create one for free on [zetteldesk.com](https://zetteldesk.com).

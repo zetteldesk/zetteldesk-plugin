@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "zetteldesk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Write and send real letters by post from Claude, ChatGPT or Codex. Zetteldesk prints and mails them in Germany, to almost any country.",
   "author": {
     "name": "Zetteldesk",
@@ -23,7 +23,6 @@
   ],
   "extensions": {
     "com.openai": {
-      "apps": "./.app.json",
       "interface": {
         "displayName": "Zetteldesk",
         "shortDescription": "Send real letters by post",
